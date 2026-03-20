@@ -31,7 +31,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="border-t border-border/50 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
-        <p>© 2026 <span className="notranslate mx-1">ny.ai</span> — Nyaay AI. Not a substitute for professional legal advice.</p>
+        <p>© 2026 <span className="notranslate mx-1">ny.ai</span> — Nyaay AI.</p>
         <p className="flex items-center gap-1">Made with <Heart className="w-3 h-3 text-destructive" /> for India</p>
       </div>
     </div>
