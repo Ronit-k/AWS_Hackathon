@@ -4,17 +4,22 @@ import { Button } from "@/components/ui/button";
 import { Send, Mic, MicOff, Shield, RotateCcw } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 
+import { ReactNode } from "react";
+
 interface Message {
   id: string;
   role: "user" | "assistant";
-  content: string;
+  content: string | ReactNode;
 }
 
 const INITIAL_MESSAGE: Message = {
   id: "welcome",
   role: "assistant",
-  content:
-    "Namaste 🙏 I'm your legal assistant from ny.ai. I can help you understand your rights under Indian law, explain legal terms in simple language, and suggest next steps.\n\nYour conversation is fully anonymous — nothing is stored. How can I help you today?",
+  content: (
+    <>
+      Namaste 🙏 I'm your legal assistant from <span className="notranslate mx-1">ny.ai</span>. I can help you understand your rights under Indian law, explain legal terms in simple language, and suggest next steps.{"\n\n"}Your conversation is fully anonymous — nothing is stored. How can I help you today?
+    </>
+  ),
 };
 
 const SUGGESTED_QUESTIONS = [
@@ -157,7 +162,7 @@ const Chat = () => {
         </form>
 
         <p className="text-center text-[10px] text-muted-foreground mt-2">
-          ny.ai provides general legal information, not professional legal advice.
+          <span className="notranslate mx-1">ny.ai</span> provides general legal information, not professional legal advice.
         </p>
       </div>
     </Layout>
