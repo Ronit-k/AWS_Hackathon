@@ -188,9 +188,8 @@ const Analyze = () => {
             }}
             onDragLeave={() => setDragOver(false)}
             onDrop={handleDrop}
-            className={`border-2 border-dashed rounded-2xl p-8 md:p-12 text-center transition-colors ${
-              dragOver ? "border-primary bg-sage-light/50" : "border-border hover:border-primary/30"
-            }`}
+            className={`border-2 border-dashed rounded-2xl p-8 md:p-12 text-center transition-colors ${dragOver ? "border-primary bg-sage-light/50" : "border-border hover:border-primary/30"
+              }`}
           >
             {!file ? (
               <>
@@ -254,7 +253,7 @@ const Analyze = () => {
           <ScrollReveal delay={0}>
             <div className="mt-8 space-y-6">
               <div className="bg-card border border-border rounded-2xl p-6">
-                <h3 className="font-display text-lg text-foreground mb-2">Backend Response</h3>
+                <h3 className="font-display text-lg text-foreground mb-2">Summary</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">{result.summary}</p>
               </div>
 
@@ -298,9 +297,8 @@ const Analyze = () => {
                           </div>
                         )}
                         <div
-                          className={`max-w-[82%] px-4 py-2.5 text-sm leading-relaxed whitespace-pre-line ${
-                            msg.role === "user" ? "chat-bubble-user" : "chat-bubble-bot"
-                          }`}
+                          className={`max-w-[82%] px-4 py-2.5 text-sm leading-relaxed whitespace-pre-line ${msg.role === "user" ? "chat-bubble-user" : "chat-bubble-bot"
+                            }`}
                         >
                           {msg.content}
                         </div>
