@@ -136,14 +136,6 @@
 .delay-500 { animation-delay: 500ms; }
 .delay-600 { animation-delay: 600ms; }
 
-/* Quick exit button */
-.quick-exit {
-  position: fixed;
-  top: 12px;
-  right: 12px;
-  z-index: 9999;
-}
-
 /* Chat bubble styles */
 .chat-bubble-user {
   background-color: hsl(var(--sage));

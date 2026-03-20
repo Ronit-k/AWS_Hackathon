@@ -17,7 +17,6 @@ const buttonVariants = cva(
         hero: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg text-base font-semibold rounded-xl",
         warm: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-sm hover:shadow-md font-semibold",
         emergency: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-sm font-semibold",
-        "quick-exit": "bg-foreground/80 text-background hover:bg-foreground/90 text-xs font-bold uppercase tracking-wider rounded-full shadow-lg",
       },
       size: {
         default: "h-10 px-4 py-2",
