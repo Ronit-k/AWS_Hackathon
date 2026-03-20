@@ -149,3 +149,20 @@
   border-radius: 1.25rem 1.25rem 1.25rem 0.25rem;
   border: 1px solid hsl(var(--border));
 }
+
+/* Hide Google Translate top bar and tooltips */
+.goog-te-banner-frame.skiptranslate,
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
