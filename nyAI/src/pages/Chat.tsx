@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 import { postQuery } from "@/lib/api";
-import { Mic, MicOff, RotateCcw, Send, Shield } from "lucide-react";
+import { Mic, MicOff, RotateCcw, Scale, Send, Shield } from "lucide-react";
 
 import { ReactNode } from "react";
 
@@ -105,7 +105,7 @@ const Chat = () => {
         <ScrollReveal>
           <div className="flex items-center gap-3 mb-6 pb-4 border-b border-border/50">
             <div className="w-10 h-10 rounded-xl bg-sage-light flex items-center justify-center">
-              <Shield className="w-5 h-5 text-primary" />
+              <Scale className="w-5 h-5 text-primary" />
             </div>
             <div>
               <h1 className="font-display text-xl text-foreground">Legal Help Chat</h1>

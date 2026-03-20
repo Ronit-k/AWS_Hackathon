@@ -9,6 +9,7 @@ import {
   FileText,
   MessageCircle,
   RotateCcw,
+  Scale,
   Send,
   Shield,
   Trash2,
@@ -174,7 +175,7 @@ const Analyze = () => {
               Ask the backend document analyzer for a summary or follow-up answers using the doc_analyzer endpoint.
             </p>
             <div className="flex items-center justify-center gap-2 mt-3 text-xs text-muted-foreground">
-              <Shield className="w-3 h-3" />
+              <Scale className="w-3 h-3" />
               Requests are sent as JSON with a single query field
             </div>
           </div>

@@ -159,7 +159,7 @@ const Rights = () => {
         {/* CTA */}
         <ScrollReveal delay={400}>
           <div className="mt-14 bg-sage-light rounded-2xl p-6 md:p-8 text-center">
-            <Shield className="w-8 h-8 text-primary mx-auto mb-3" />
+            <Scale className="w-8 h-8 text-primary mx-auto mb-3" />
             <h3 className="font-display text-lg text-foreground mb-2">
               Need personalized help?
             </h3>

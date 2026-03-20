@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Shield, Menu, X, Globe } from "lucide-react";
+import { Shield, Menu, X, Globe, Scale } from "lucide-react";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -58,7 +58,7 @@ const Navbar = () => {
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2 group">
           <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-            <Shield className="w-4 h-4 text-primary-foreground" />
+            <Scale className="w-4 h-4 text-primary-foreground" />
           </div>
           <span className="font-display text-xl text-foreground tracking-tight notranslate mx-1">
             ny.ai

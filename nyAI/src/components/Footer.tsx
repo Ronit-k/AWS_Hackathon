@@ -1,4 +1,4 @@
-import { Shield, Lock, Heart } from "lucide-react";
+import { Shield, Lock, Heart, Scale } from "lucide-react";
 
 const Footer = () => (
   <footer className="border-t border-border/50 bg-card/50 py-12">
@@ -6,7 +6,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-3 gap-8 mb-8">
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <Shield className="w-5 h-5 text-primary" />
+            <Scale className="w-5 h-5 text-primary" />
             <span className="font-display text-lg notranslate mx-1">ny.ai</span>
           </div>
           <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
