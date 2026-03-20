@@ -91,7 +91,7 @@ const Index = () => {
           <ScrollReveal>
             <div className="text-center mb-14">
               <h2 className="text-3xl md:text-4xl font-display text-foreground mb-4">
-                How ny.ai helps you
+                How <span className="notranslate mx-1">ny.ai</span> helps you
               </h2>
               <p className="text-muted-foreground max-w-md mx-auto">
                 Simple, safe tools designed for real people facing real challenges.

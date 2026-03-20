@@ -5,17 +5,22 @@ import { Button } from "@/components/ui/button";
 import { postQuery } from "@/lib/api";
 import { Mic, MicOff, RotateCcw, Send, Shield } from "lucide-react";
 
+import { ReactNode } from "react";
+
 interface Message {
   id: string;
   role: "user" | "assistant";
-  content: string;
+  content: string | ReactNode;
 }
 
 const INITIAL_MESSAGE: Message = {
   id: "welcome",
   role: "assistant",
-  content:
-    "Namaste. I'm your legal assistant from ny.ai. I can help you understand your rights under Indian law, explain legal terms in simple language, and suggest next steps.\n\nYour conversation is anonymous. How can I help you today?",
+  content: (
+    <>
+      Namaste 🙏 I'm your legal assistant from <span className="notranslate mx-1">ny.ai</span>. I can help you understand your rights under Indian law, explain legal terms in simple language, and suggest next steps.{"\n\n"}Your conversation is fully anonymous — nothing is stored. How can I help you today?
+    </>
+  ),
 };
 
 const SUGGESTED_QUESTIONS = [
@@ -128,9 +133,8 @@ const Chat = () => {
               className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"} animate-fade-in`}
             >
               <div
-                className={`max-w-[85%] md:max-w-[75%] px-4 py-3 text-sm leading-relaxed whitespace-pre-line ${
-                  msg.role === "user" ? "chat-bubble-user" : "chat-bubble-bot"
-                }`}
+                className={`max-w-[85%] md:max-w-[75%] px-4 py-3 text-sm leading-relaxed whitespace-pre-line ${msg.role === "user" ? "chat-bubble-user" : "chat-bubble-bot"
+                  }`}
               >
                 {msg.content}
               </div>
